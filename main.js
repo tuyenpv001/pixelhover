@@ -1,7 +1,7 @@
 const data = []
 const imageArray = document.querySelectorAll('.image')
 
-console.log(imageArray)
+// console.log(imageArray)
 window.addEventListener('load', function () {
   const canvas = document.getElementById('canvas')
 
@@ -10,7 +10,7 @@ window.addEventListener('load', function () {
   canvas.height = window.innerHeight
   const ctx = canvas.getContext('2d')
 
-  console.log(ctx)
+//   console.log(ctx)
 
   //blueprint to create individual particle objects
   class Particle {
@@ -97,7 +97,7 @@ window.addEventListener('load', function () {
         canvas.width,
         canvas.height
       ).data
-      console.log(pixels)
+//       console.log(pixels)
 
       for (let y = 0; y < this.height; y += this.gap) {
         for (let x = 0; x < this.width; x += this.gap) {
@@ -129,7 +129,7 @@ window.addEventListener('load', function () {
 
   const effect = new Effect(canvas.width, canvas.height)
   effect.init(ctx)
-  console.log(effect)
+//   console.log(effect)
   // effect.draw(ctx)
   // ctx.fillRect(50, 50, 100, 200)
   // ctx.drawImage(image1, 100, 100)
